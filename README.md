@@ -10,7 +10,7 @@ A robust relay control and safety management board designed for hardware kill sw
 ![Relay Control Board Schematic](images/Relay-Board-Schematic.png)
 
 ### Key Features:
-- **Relay Outputs:** Features 7 relay outputs with selectable 12V and MCU-level voltage control options, protected by a dedicated 12V fuse.
+- **Relay Outputs:** Features 7 relay outputs with selectable 12V and MCU-level voltage control options, protected by a fuse and TVS diode.
 - **Kill & Safety System:** 
   * 6 input signals with individual red status LEDs to monitor when a kill state is active.
   * 2 dedicated inputs for manual override (enables the yellow status indicator; overridden by the red kill state).
