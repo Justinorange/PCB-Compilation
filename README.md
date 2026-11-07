@@ -2,6 +2,28 @@
 
 A collection of custom PCB designs, prototypes, and lab projects built for research and experimentation.
 
+## [Relay Control Board](https://github.com/uf-mil-electrical/NaviGator/tree/3adb6dfac39e3fa88b3697202d415e38e3245c48/Kill%20Board/2026/Relay-Board-PCB/Relay-Board)
+
+A robust relay control and safety management board designed for hardware kill switching, power distribution, and status monitoring.
+
+![Relay Control Board](images/Relay-Board.png)
+![Relay Control Board Schematic](images/Relay-Board-Schematic.png)
+
+### Key Features:
+- **Relay Outputs:** Features 7 relay outputs with selectable 12V and MCU-level voltage control options, protected by a dedicated 12V fuse.
+- **Kill & Safety System:** 
+  * 6 input signals with individual red status LEDs to monitor when a kill state is active.
+  * 2 dedicated inputs for manual override (enables the yellow status indicator; overridden by the red kill state).
+  * Active high/low configuration jumpers for flexible input/output logic.
+  * Hardware override jumper to unkill the system.
+- **Light Tower Status Indicators:** Built using 0803 SMD LEDs for clean labeling and visual feedback:
+  * **Enable**
+  * **Red:** Kill enabled
+  * **Yellow:** Manual enable
+  * **Green:** Autonomous / default operation
+
+View the project source and design files on [GitHub](https://github.com/uf-mil-electrical/NaviGator/tree/3adb6dfac39e3fa88b3697202d415e38e3245c48/Kill%20Board/2026/Relay-Board-PCB/Relay-Board).
+
 ## [Air Quality Sensor Breakout Boards](https://github.com/uf-mil-electrical/misc_hardware/tree/7a44acb8b002e7d45b233cf23141b061ac4c3471/Sensing/Sensor_Breakouts)
 
 I am building a set of sensor breakout boards that will eventually be combined into a single air quality sensing PCB. These boards are still in progress, and I am finishing the analog sensor boards before moving on to the digital ones.
@@ -12,28 +34,6 @@ I am building a set of sensor breakout boards that will eventually be combined i
 ![Alcohol sensor](images/MQ-3B.png)
 
 These breakout boards were made for the Machine Intelligence Laboratory (MIL) and are part of a larger integrated sensing platform. View the breakout designs on [GitHub](https://github.com/uf-mil-electrical/misc_hardware/tree/7a44acb8b002e7d45b233cf23141b061ac4c3471/Sensing/Sensor_Breakouts).
-
-## [Relay Control Board](https://github.com/uf-mil-electrical/NaviGator/tree/3adb6dfac39e3fa88b3697202d415e38e3245c48/Kill%20Board/2026/Relay-Board-PCB/Relay-Board)
-
-A robust relay control and safety management board designed for hardware kill switching, power distribution, and status monitoring.
-
-![Relay Control Board](images/Relay-Board.png)
-![Relay Control Board Schematic](images/Relay-Board-Schematic.png)
-
-### Key Features:
-* **Relay Outputs:** Features 7 relay outputs with selectable 12V and MCU-level voltage control options, protected by a dedicated 12V fuse.
-* **Kill & Safety System:** 
-  * 6 input signals with individual red status LEDs to monitor when a kill state is active.
-  * 2 dedicated inputs for manual override (enables the yellow status indicator; overridden by the red kill state).
-  * Active high/low configuration jumpers for flexible input/output logic.
-  * Hardware override jumper to unkill the system.
-* **Light Tower Status Indicators:** Built using 0803 SMD LEDs for clean labeling and visual feedback:
-  * **Enable**
-  * **Red:** Kill enabled
-  * **Yellow:** Manual enable
-  * **Green:** Autonomous / default operation
-
-View the project source and design files on [GitHub](https://github.com/uf-mil-electrical/NaviGator/tree/3adb6dfac39e3fa88b3697202d415e38e3245c48/Kill%20Board/2026/Relay-Board-PCB/Relay-Board).
 
 ## [STUSB 4500 Controller](https://github.com/Justinorange/STUSB4500-Arduino-Controller)
 
